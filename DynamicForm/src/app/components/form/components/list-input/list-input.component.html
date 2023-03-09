@@ -1,0 +1,8 @@
+<mat-form-field class="demo-full-width margin-top" [formGroup]="group">
+  <mat-select [placeholder]="field.displayName" [formControlName]="field.fieldName">
+    <mat-option *ngFor="let item of field.options" [value]="item">{{
+      item
+    }}</mat-option>
+  </mat-select>
+  <mat-hint *ngIf="field.description">{{field.description}}</mat-hint>
+</mat-form-field>

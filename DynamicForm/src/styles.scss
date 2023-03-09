@@ -9,4 +9,36 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container{
     height: 100%;
     width: 100%;
+    padding: 12px;
+}
+
+.v-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button{
+    width: fit-content;
+}
+
+// MATERIAL FORM FIELDS
+.mat-mdc-form-field{
+    width: 100%;
+}
+
+.checkbox-group{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li{
+            list-style: none;
+        }
+    }
 }

@@ -1,0 +1,6 @@
+<div class="demo-full-width margin-top" [formGroup]="group">
+  <mat-checkbox [formControlName]="field.fieldName">{{
+    field.displayName
+  }}</mat-checkbox>
+  <mat-hint *ngIf="field.description">{{field.description}}</mat-hint>
+</div>
