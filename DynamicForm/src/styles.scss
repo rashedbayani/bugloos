@@ -18,6 +18,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     gap: 12px;
 }
 
+.center-center{
+    align-items: center;
+    justify-content: center;
+}
+
 .button{
     width: fit-content;
 }

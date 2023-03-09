@@ -1,5 +1,11 @@
 <div>
-    <table mat-table [dataSource]="listData" class="mat-elevation-z8" *ngIf="listData.length > 0">
+  <ng-template #noData>
+    <div class="no-data">
+      <img src="../../../assets/no-data.JPG" class="no-data">
+      <h2>No data to display. Click on "New" button to create one!</h2>
+    </div>
+  </ng-template>
+    <table mat-table [dataSource]="listData" class="mat-elevation-z8" *ngIf="listData.length > 0 ; else noData">
         
         <ng-container *ngFor="let column of columns" [matColumnDef]="column.fieldName">
             <th mat-header-cell *matHeaderCellDef> {{column.displayName}} </th>
