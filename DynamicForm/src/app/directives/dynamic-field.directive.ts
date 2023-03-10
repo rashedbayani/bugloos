@@ -13,13 +13,6 @@ import { RadioInputComponent } from '../components/form/components/radio-input/r
 import { TextAreaInputComponent } from '../components/form/components/text-area-input/text-area-input.component';
 import { TextInputComponent } from '../components/form/components/text-input/text-input.component';
 import { FormFieldConfig } from '../models/general.model';
-
-//   import { InputComponent } from '../input/input.component';
-//   import { ButtonComponent } from '../button/button.component';
-//   import { SelectComponent } from '../select/select.component';
-//   import { DateComponent } from '../date/date.component';
-//   import { RadiobuttonComponent } from '../radiobutton/radiobutton.component';
-//   import { CheckboxComponent } from '../checkbox/checkbox.component';
   
   const componentMapper: {[key: string]: any} = {
     'text': TextInputComponent,

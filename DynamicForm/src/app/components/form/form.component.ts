@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { filter } from 'rxjs';
 import { FormFieldConfig } from 'src/app/models/general.model';
 import { FormsService } from 'src/app/services/forms.service';
 
